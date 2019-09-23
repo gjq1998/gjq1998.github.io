@@ -7,13 +7,22 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Windows和Manjaro(kde) 双系统安装作为电脑小白，想要学习使用linux系统，但是又不想舍弃使用多年的windows，于是折腾着安装双系统。 一、U盘写入镜像首先从[manjaro官网][1]上下载相应的镜像，然后写入u盘,我使用的是Rufus3.5,分区类型选择GPT，配置好后点击开始选择以dd模式写入镜像。[1]:https://manjaro.org/ 二、磁盘分区在win">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/09/17/test/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Windows和Manjaro(kde) 双系统安装作为电脑小白，想要学习使用linux系统，但是又不想舍弃使用多年的windows，于是折腾着安装双系统。 一、U盘写入镜像首先从[manjaro官网][1]上下载相应的镜像，然后写入u盘,我使用的是Rufus3.5,分区类型选择GPT，配置好后点击开始选择以dd模式写入镜像。[1]:https://manjaro.org/ 二、磁盘分区在win">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://i.loli.net/2019/09/17/IPOb657jgvDerHk.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/18/zB6AXCRLbmYcQOp.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/18/I2EbhoqySl3a8N6.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/18/gu4GjNAFQ7qcfJp.png">
+<meta property="og:updated_time" content="2019-09-19T07:49:56.159Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="Windows和Manjaro(kde) 双系统安装作为电脑小白，想要学习使用linux系统，但是又不想舍弃使用多年的windows，于是折腾着安装双系统。 一、U盘写入镜像首先从[manjaro官网][1]上下载相应的镜像，然后写入u盘,我使用的是Rufus3.5,分区类型选择GPT，配置好后点击开始选择以dd模式写入镜像。[1]:https://manjaro.org/ 二、磁盘分区在win">
+<meta name="twitter:image" content="https://i.loli.net/2019/09/17/IPOb657jgvDerHk.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,49 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-new" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/19/new/" class="article-date">
-  <time datetime="2019-09-18T17:30:36.383Z" itemprop="datePublished">2019-09-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>title: manjaro系统wifi无法使用问题</p>
-<p>装好manjaro-kde系统以后，发现wifi选项无法勾选上。这是联想拯救者笔记本会出现的问题，不确定其他笔记本情况。</p>
-<p>首先终端输入<code>rfkill list all</code>,结果如下<br><img src="https://i.loli.net/2019/09/19/r2Hxl17EZKuNjoa.png" alt></p>
-<p>会发现无线模块被 hard blocked了。解决方法如下： </p>
-<p>终端输入</p>
-<p><code>sudo vim /etc/modprobe.d/blacklist.conf</code></p>
-<p>在建立的文件中输入</p>
-<p><code>blacklist ideapad_laptop</code></p>
-<p>保存后重启即可。</p>
-<p>重启后再次输入<code>rfkill list all</code> 会变成<br><img src="https://i.loli.net/2019/09/19/ydJHn57heXoUQlB.png" alt></p>
-<p>此时就会发现wifi能用了</p>
-<p>date: 2019-09-19 01:30:36</p>
-<hr>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/19/new/" data-id="ck0wj55sa0000s0u3jex9x1hj" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/17/test/" class="article-date">
   <time datetime="2019-09-17T06:59:58.302Z" itemprop="datePublished">2019-09-17</time>
@@ -137,11 +104,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/19/new/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         

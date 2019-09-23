@@ -5,16 +5,22 @@
   
 
   
-  <title>test1 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="test1">
-<meta property="og:url" content="http://yoursite.com/2019/09/10/test1-1/index.html">
+  <meta name="description" content="title: manjaro系统wifi无法使用问题 装好manjaro-kde系统以后，发现wifi选项无法勾选上。这是联想拯救者笔记本会出现的问题，不确定其他笔记本情况。 首先终端输入rfkill list all,结果如下 会发现无线模块被 hard blocked了。解决方法如下：  终端输入 sudo vim /etc/modprobe.d/blacklist.conf 在建立的文件中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/09/19/new/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title: manjaro系统wifi无法使用问题 装好manjaro-kde系统以后，发现wifi选项无法勾选上。这是联想拯救者笔记本会出现的问题，不确定其他笔记本情况。 首先终端输入rfkill list all,结果如下 会发现无线模块被 hard blocked了。解决方法如下：  终端输入 sudo vim /etc/modprobe.d/blacklist.conf 在建立的文件中">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-09T17:48:06.313Z">
+<meta property="og:image" content="https://i.loli.net/2019/09/19/r2Hxl17EZKuNjoa.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/19/ydJHn57heXoUQlB.png">
+<meta property="og:updated_time" content="2019-09-19T08:10:05.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test1">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title: manjaro系统wifi无法使用问题 装好manjaro-kde系统以后，发现wifi选项无法勾选上。这是联想拯救者笔记本会出现的问题，不确定其他笔记本情况。 首先终端输入rfkill list all,结果如下 会发现无线模块被 hard blocked了。解决方法如下：  终端输入 sudo vim /etc/modprobe.d/blacklist.conf 在建立的文件中">
+<meta name="twitter:image" content="https://i.loli.net/2019/09/19/r2Hxl17EZKuNjoa.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -61,33 +67,37 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-test1-1" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-new" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/09/10/test1-1/" class="article-date">
-  <time datetime="2019-09-09T17:48:06.000Z" itemprop="datePublished">2019-09-10</time>
+    <a href="/2019/09/19/new/" class="article-date">
+  <time datetime="2019-09-18T17:30:36.383Z" itemprop="datePublished">2019-09-19</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      test1
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <hr>
+<p>title: manjaro系统wifi无法使用问题</p>
+<p>装好manjaro-kde系统以后，发现wifi选项无法勾选上。这是联想拯救者笔记本会出现的问题，不确定其他笔记本情况。</p>
+<p>首先终端输入<code>rfkill list all</code>,结果如下<br><img src="https://i.loli.net/2019/09/19/r2Hxl17EZKuNjoa.png" alt></p>
+<p>会发现无线模块被 hard blocked了。解决方法如下： </p>
+<p>终端输入</p>
+<p><code>sudo vim /etc/modprobe.d/blacklist.conf</code></p>
+<p>在建立的文件中输入</p>
+<p><code>blacklist ideapad_laptop</code></p>
+<p>保存后重启即可。</p>
+<p>重启后再次输入<code>rfkill list all</code> 会变成<br><img src="https://i.loli.net/2019/09/19/ydJHn57heXoUQlB.png" alt></p>
+<p>此时就会发现wifi能用了</p>
+<p>date: 2019-09-19 01:30:36</p>
+<hr>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/10/test1-1/" data-id="ck0dfr6n00001vgu3cw3z13bj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/19/new/" data-id="ck0wj55sa0000s0u3jex9x1hj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -96,19 +106,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/09/10/test1-2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          test1
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/10/test1/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/09/17/test/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">test1</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>
@@ -145,23 +146,11 @@
       <ul>
         
           <li>
-            <a href="/2019/09/10/text/">text</a>
+            <a href="/2019/09/19/new/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/09/10/test1-2/">test1</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/10/test1-1/">test1</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/10/test1/">test1</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/10/hello-world/">Hello World</a>
+            <a href="/2019/09/17/test/">(no title)</a>
           </li>
         
       </ul>
