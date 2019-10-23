@@ -1,7 +1,8 @@
 ---
-title: network
+ 
 
-#概览
+#    <center>网络概览</center>
+ 
 
 读完《网络是怎样连接的》,对网络有了初步的认识，在这里做个小小的总结。
 ![](https://i.loli.net/2019/09/20/FuNWgX3qj98nR4H.png)

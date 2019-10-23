@@ -5,9 +5,8 @@
 <img src="https://i.loli.net/2019/09/17/IPOb657jgvDerHk.png" width = "100%" height = "50%"  div align=center >
 
 ## 一、U盘写入镜像 
-首先从[manjaro官网][1]上下载相应的镜像，然后写入u盘,我使用的是Rufus3.5,分区类型选择GPT，配置好后点击开始选择以dd模式写入镜像。
+首先从[manjaro官网](https://manjaro.org/)上下载相应的镜像，然后写入u盘,我使用的是Rufus3.5,分区类型选择GPT，配置好后点击开始选择以dd模式写入镜像。
 ![image.png](https://i.loli.net/2019/09/18/zB6AXCRLbmYcQOp.png)
-[1]:https://manjaro.org/
 ## 二、磁盘分区
 在windows中打开磁盘管理器，为即将安装的manjaro系统分配空间，右键点击磁盘选择压缩卷，大小根据自己的需要而定，我选择的是150G，压缩成功后会有150G的未分配空间。
 ![image.png](https://i.loli.net/2019/09/18/I2EbhoqySl3a8N6.png)
